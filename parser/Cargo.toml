@@ -1,0 +1,9 @@
+[package]
+name = "mb"
+version = "0.1.0"
+authors = ["Arvid E. Picciani <aep@exys.org>"]
+
+[dependencies]
+regex = "0.2"
+serde_json = "1.0"
+
