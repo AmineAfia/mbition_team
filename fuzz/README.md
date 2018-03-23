@@ -5,6 +5,8 @@ I will use one of libraries which can accept a working format (json or text) and
 
 This way I can produce thousands of test-cases instead of just 25 and I can make passing all those part of integration tests that every app needs to go through.
 
+Here I am using code to generate my code. So in real life I will create a pipline to generate and run the fuzz test for every commit and send any crash report to developer.
+
 # Exmaple of libraries
 https://github.com/mseclab/PyJFuzz
 
