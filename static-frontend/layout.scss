@@ -42,7 +42,7 @@ body {
 
 .navigation-list {
   position: absolute;
-  top: 41px;
+  top: 11vw;
   right: 0;
   left: 1vw;
   list-style: none;
@@ -158,4 +158,12 @@ body {
   border-radius: 4px;
   box-shadow: 0 3px 9px rgba(0,0,0,.2);
   background: #c0c0c0;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  width: 55%;
+  height: auto;
+  margin: 40px auto 0 auto;
 }
