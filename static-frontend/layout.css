@@ -75,7 +75,7 @@ body {
   font-weight: 600; }
 
 .dots {
-  width: 91%;
+  width: 100%;
   margin: 0 auto; }
 
 .dots-group {
@@ -96,7 +96,7 @@ body {
 
 .row-label {
   display: block;
-  width: 100px;
+  width: 150px;
   text-align: right;
   font-weight: 800;
   font-size: 14px; }
