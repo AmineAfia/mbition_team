@@ -153,6 +153,7 @@ body {
 
 .video {
   position: absolute;
+  z-index: 999;
   left: 2vw;
   bottom: 2vw;
   border-radius: 4px;
