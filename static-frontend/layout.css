@@ -1,0 +1,73 @@
+/* AUTHOR: Max Tillich */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  padding: 0;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px; }
+
+body {
+  background: #fff;
+  color: #202020;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, Helvetica, Arial, Roboto, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.59rem; }
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #1C2542;
+  color: #fff;
+  width: 20vw;
+  font-weight: 500; }
+
+.navigation-list {
+  position: absolute;
+  top: 21px;
+  right: 0;
+  left: 1vw;
+  list-style: none;
+  text-align: right;
+  margin: 0; }
+  .navigation-list li {
+    margin-bottom: .25vw; }
+  .navigation-list span {
+    display: block;
+    line-height: 66px;
+    padding-right: 2vw;
+    cursor: pointer; }
+    .navigation-list span:hover {
+      background: rgba(255, 255, 255, 0.125); }
+    .navigation-list span.active, .navigation-list span.active:hover {
+      background: #fff;
+      color: #1C2542;
+      cursor: default; }
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 20vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding: 40px 5vw 5vw 5vw;
+  min-height: 100px; }
+
+.question {
+  margin: 0 0 2em;
+  font-weight: 600; }
+
+/*# sourceMappingURL=layout.css.map */
