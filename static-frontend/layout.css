@@ -120,4 +120,12 @@ body {
 .green .row-label {
   color: #41B290; }
 
+.video {
+  position: absolute;
+  left: 2vw;
+  bottom: 2vw;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  background: #c0c0c0; }
+
 /*# sourceMappingURL=layout.css.map */
