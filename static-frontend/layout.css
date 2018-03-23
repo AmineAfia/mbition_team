@@ -100,6 +100,11 @@ body {
   text-align: right;
   font-weight: 800;
   font-size: 14px; }
+  .row-label span {
+    opacity: .6;
+    display: inline-block;
+    margin-left: 2px;
+    font-weight: 400; }
 
 .row-dots {
   list-style: none;
