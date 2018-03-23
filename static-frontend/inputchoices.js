@@ -1,5 +1,5 @@
 var dot = ".";
-
+var d;
 // "movements": {
 //     "VEHICLE_NOT_MOVING": 1
 // },
@@ -61,10 +61,13 @@ function block(blockTitle, object) {
 
 function createRows(object) {
     var x = "";
+    var maxValue = Math.max(...Object.values(object));
+    console.log(object);
+
     for (const key in object) {
         if (object.hasOwnProperty(key)) {
             const element = object[key];
-          x = x+createRow(key, object[key]);                        
+          x = x+createRow(key, object[key], object[key]==maxValue);                        
         }
     }
     return x;
@@ -87,9 +90,12 @@ function createTitleElem(title) {
 //     <li class="dot"></li>
 // </ul>
 // </div>
-function createRow(title, count) {
+function createRow(title, count, greenOn) {
+    var green = "";
+    if (greenOn) { green = "green"; } 
+
     var elem = 
-    '<div class="dots-visualization-row green">'+
+    '<div class="dots-visualization-row '+green+'">'+
         '<span class="row-label">'+title+'</span>'+
         '<ul class="row-dots">'+
         createDots(count)+
@@ -103,8 +109,8 @@ function createRow(title, count) {
 
 function createDots(n) {
     var x = "";
-    if (n > 100 && n < 1000) { n = n/20}
-    if (n > 1000) { n = n/200}
+    if (n > 100 && n < 1000) { n = n/10}
+    if (n > 1000) { n = n/100}
     for (let i = 0; i < n; i++) {
         x = x+ '<li class="dot"></li>';
     }
