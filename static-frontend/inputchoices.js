@@ -1,9 +1,17 @@
 var dot = ".";
 
+// "movements": {
+//     "VEHICLE_NOT_MOVING": 1
+// },
+
+
 $( document ).ready(function() {
     console.log( "ready!" );
-    $.getJSON("example_data.json", function(result) {
-        $("#main").append(block("AAA"));
+    $.getJSON("data.json", function(result) {
+        $("#main").append(block("Movements", result.movements));
+        $("#main").append(block("Input devices", result.input_devices));
+        $("#main").append(block("App usage", result.app_usage));
+
 
 
         // var mainEl = $("#main");
@@ -39,22 +47,29 @@ $( document ).ready(function() {
 });
 
 
-function block(blockTitle) {
+function block(blockTitle, object) {
     var elem = 
-    '<div class="dots-group">'+
+        '<div class="dots-group">'+
           '<h2 class="dots-group-name">'+blockTitle+'</h2>'+
           '<div class="dots-visualization">'+
-          createRow("title", 1)+
-          createRow("title", 1)+
-          createRow("title", 1)+
+          createRows(object)+
           '</div>'+
         '</div>'
-
-        
 
         return elem;
 }
 
+function createRows(object) {
+    var x = "";
+    for (const key in object) {
+        if (object.hasOwnProperty(key)) {
+            const element = object[key];
+          x = x+createRow(key, object[key]);                        
+        }
+    }
+    return x;
+
+}
 
 
 
@@ -77,27 +92,21 @@ function createRow(title, count) {
     '<div class="dots-visualization-row green">'+
         '<span class="row-label">'+title+'</span>'+
         '<ul class="row-dots">'+
-        '<li class="dot"></li>'+
-        '<li class="dot"></li>'+
-        '<li class="dot"></li>'+
+        createDots(count)+
         '</ul>'+
     '</div>';
 
     return elem;
-    // var element = $('<div class="dots-visualization-row green"></div>')
 
-    // //add row title
-    // var rowTitle = $('<span class="row-label">'+title+'</span>');
-    // element.append(rowTitle);
-
-    // //add dots
-    // var dotsBody = $('<ul class="row-dots"></ul>');
-    // var aDot = '<li class="dot"></li>';
-
-    // for (let i = 0; i < count; i++) {
-    //     dotsBody.append(aDot);
-    // }
-    // console.log(dotsBody.html())
-    // element.append(dotsBody);
-    // return element;
 } 
+
+
+function createDots(n) {
+    var x = "";
+    if (n > 100 && n < 1000) { n = n/20}
+    if (n > 1000) { n = n/200}
+    for (let i = 0; i < n; i++) {
+        x = x+ '<li class="dot"></li>';
+    }
+    return x;
+}
