@@ -62,10 +62,11 @@
             .round(true)
             .paddingInner(1);
         
-        d3.json("../frontend/data.json", function(error, data) {
+        d3.json("../data.json", function(error, data) {
           if (error) throw error;
+          console.log(data);
         
-          var root = d3.hierarchy(data)
+          var root = d3.hierarchy(data.searches)
               .eachBefore(function(d) { d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name; })
               .sum(sumBySize)
               .sort(function(a, b) { return b.height - a.height || b.value - a.value; });
