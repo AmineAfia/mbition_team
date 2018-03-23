@@ -1,0 +1,57 @@
+
+<script src="jquery-2.2.4.min.js"></script>
+
+
+
+<body>
+    <div id="main">
+        <div id="header"></div>
+        <div id="type"></div>
+    </div>
+
+
+</body>
+
+
+<script>
+    var dot = ".";
+
+    $.getJSON("example_data.json", function(result) {
+        var mainEl = $("#main");
+        var block1 = createBlock('app_usage', resizeBy['app_usage']);
+        console.log(block1);
+        mainEl.append(block1);
+    });
+
+    function createBlock(title, object) {
+        var block = $("<div class='header'></div>");
+        var title = $("<div class='title'>"+title+"</div>");
+        var lines = $("<div class='title'></div>");
+
+        for (const key in object) {
+            if (object.hasOwnProperty(key)) {
+                const element = object[key];
+                lines.append("<div>"+key+"</div><div>"+generateDots(count)+"</div>")
+                
+            }
+        }
+        
+        console.log(lines);
+
+
+    }
+    
+
+    function generateDots(count) {
+        var dots = "";
+        for (let i = 0; i < count; i++) {
+            dots += dot;
+        }
+        return dots;
+    }
+
+    function createNewHrader() {
+        return ;
+    }
+</script>
+
