@@ -10,7 +10,9 @@
                "children": [
                 {"name": "Denmark", "size": 5},
                 {"name": "John", "size": 2},
-                {"name": "Leipzig", "size": 2}
+                {"name": "Leipzig", "size": 2},
+                {"name": "Mike", "size": 5},
+                {"name": "Simon", "size": 3}
                ]
            },
            {
@@ -18,14 +20,19 @@
                "children": [
                 {"name": "Berlin", "size": 3},
                 {"name": "Dresden", "size": 3},
-                {"name": "Munich", "size": 6}
+                {"name": "Munich", "size": 6},
+                {"name": "Stuttgart", "size": 5}
                ]
            },
            {
                "name": "GLOBAL_SEARCH",
                "children": [
                 {"name": "Denmark", "size": 6},
-                {"name": "Essen", "size": 3}
+                {"name": "Essen", "size": 3},
+                {"name": "Gabriel", "size": 2},
+                {"name": "Mike", "size": 3},
+                {"name": "Norway", "size": 3},
+                {"name": "Sweden", "size": 1}
                ]
            }
         ]
