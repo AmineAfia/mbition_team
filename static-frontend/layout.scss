@@ -42,7 +42,7 @@ body {
 
 .navigation-list {
   position: absolute;
-  top: 21px;
+  top: 41px;
   right: 0;
   left: 1vw;
   list-style: none;
@@ -53,11 +53,13 @@ body {
     margin-bottom: .25vw;
   }
 
-  span {
+  a {
     display: block;
     line-height: 66px;
     padding-right: 2vw;
     cursor: pointer;
+    color: #fff;
+    text-decoration: none;
 
     &:hover {
       background: rgba(255,255,255,.125);
@@ -79,7 +81,7 @@ body {
   right: 0;
   bottom: 0;
   overflow-y: auto;
-  padding: 40px 5vw 5vw 5vw;
+  padding: 60px 5vw 5vw 5vw;
   min-height: 100px;
 }
 
