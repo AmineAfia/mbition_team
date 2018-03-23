@@ -3,19 +3,32 @@
         "VEHICLE_NOT_MOVING": 1
     },
     "searches": {
-        "PHONE_SEARCH" : {
-            "Simon": 1,
-            "Mike": 1
-        },
-        "FM_SEARCH" : {
-            "Berlin": 1,
-            "Dresden": 1,
-            "Munich": 6
-        },
-        "GLOBAL_SEARCH": {
-            "Denmark": 6,
-            "Essen": 3
-        }
+        "name": "search",
+        "children": [
+           {
+               "name": "PHONE_SEARCH",
+               "children": [
+                {"name": "Denmark", "size": 5},
+                {"name": "John", "size": 2},
+                {"name": "Leipzig", "size": 2}
+               ]
+           },
+           {
+               "name": "FM_SEARCH",
+               "children": [
+                {"name": "Berlin", "size": 3},
+                {"name": "Dresden", "size": 3},
+                {"name": "Munich", "size": 6}
+               ]
+           },
+           {
+               "name": "GLOBAL_SEARCH",
+               "children": [
+                {"name": "Denmark", "size": 6},
+                {"name": "Essen", "size": 3}
+               ]
+           }
+        ]
     },
     "input_devices": {
         "HARDKEY": 24,
