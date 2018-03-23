@@ -56,7 +56,8 @@ body {
     .navigation-list a.active, .navigation-list a.active:hover {
       background: #fff;
       color: #1C2542;
-      cursor: default; }
+      cursor: default;
+      border-radius: 3px 0 0 3px; }
 
 .content {
   position: absolute;
