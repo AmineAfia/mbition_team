@@ -1,0 +1,26 @@
+{
+    "movements": {
+        "VEHICLE_NOT_MOVING": 1
+    },
+    "searches": {
+        "PHONE_SEARCH" : {
+            "Simon": 1,
+            "Mike": 1
+        }
+    },
+    "input_devices": {
+        "HARDKEY": 24,
+        "QFN": 0,
+        "TOUCHPAD": 16,
+        "TOUCHSCREEN" : 118
+    },
+    "app_usage": {
+        "PHONE": 4795,
+        "FM_DAB": 4815,
+        "COMFORT_MASSAGE": 4882,
+        "CARINFO_CARDATA": 4845,
+        "BLUETOOTH": 2308,
+        "SETTINGS_SHORTCUTS": 2465
+    }
+}
+

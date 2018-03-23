@@ -130,6 +130,12 @@ body {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
   background: #c0c0c0; }
 
+.tree-search {
+  position: absolute;
+  z-index: 5;
+  left: 25vw;
+  top: 113px; }
+
 .logo {
   position: relative;
   display: block;
