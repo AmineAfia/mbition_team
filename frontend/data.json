@@ -1,54 +1,26 @@
 {
-    
-    "name": "movements",
-    "children":[{
-            "VEHICLE_NOT_MOVING": 1}]
+    "movements": {
+        "VEHICLE_NOT_MOVING": 1
     },
-
-    "name": "input_devices",
-    "childeren":[
-             {
-            "HARDKEY": 24,
-            "QFN": 0,
-            "TOUCHPAD": 16,
-            "TOUCHSCREEN" : 118
+    "searches": {
+        "PHONE_SEARCH" : {
+            "Simon": 1,
+            "Mike": 1
         },
-    ]
-
-    "name": "app_usage",
-    "childern":[{
+        "FM_search" : 
+    },
+    "input_devices": {
+        "HARDKEY": 24,
+        "QFN": 0,
+        "TOUCHPAD": 16,
+        "TOUCHSCREEN" : 118
+    },
+    "app_usage": {
         "PHONE": 4795,
         "FM_DAB": 4815,
         "COMFORT_MASSAGE": 4882,
         "CARINFO_CARDATA": 4845,
         "BLUETOOTH": 2308,
         "SETTINGS_SHORTCUTS": 2465
-    }],
-
-    "name": "search",
-    "children": [
-       {
-           "name": "PHONE_SEARCH",
-           "children": [
-            {"name": "Denmark", "size": 5},
-            {"name": "John", "size": 2},
-            {"name": "Leipzig", "size": 2}
-           ]
-       },
-       {
-           "name": "FM_SEARCH",
-           "children": [
-            {"name": "Berlin", "size": 3},
-            {"name": "Dresden", "size": 3},
-            {"name": "Munich", "size": 6}
-           ]
-       },
-       {
-           "name": "GLOBAL_SEARCH",
-           "children": [
-            {"name": "Denmark", "size": 6},
-            {"name": "Essen", "size": 3}
-           ]
-       }
-    ]
-   }
+    }
+}
