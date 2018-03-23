@@ -100,7 +100,6 @@ fn main() {
     }
 
 
-    let j = serde_json::to_string(&address)?;
 
     println!(r#"    "movements": {{,"#);
     for (k,v) in movements {
