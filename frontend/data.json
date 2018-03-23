@@ -1,4 +1,30 @@
 {
+    
+    "name": "movements",
+    "children":[{
+            "VEHICLE_NOT_MOVING": 1}]
+    },
+
+    "name": "input_devices",
+    "childeren":[
+             {
+            "HARDKEY": 24,
+            "QFN": 0,
+            "TOUCHPAD": 16,
+            "TOUCHSCREEN" : 118
+        },
+    ]
+
+    "name": "app_usage",
+    "childern":[{
+        "PHONE": 4795,
+        "FM_DAB": 4815,
+        "COMFORT_MASSAGE": 4882,
+        "CARINFO_CARDATA": 4845,
+        "BLUETOOTH": 2308,
+        "SETTINGS_SHORTCUTS": 2465
+    }],
+
     "name": "search",
     "children": [
        {
