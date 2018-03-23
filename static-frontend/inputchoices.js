@@ -93,10 +93,10 @@ function createTitleElem(title) {
 function createRow(title, count, greenOn) {
     var green = "";
     if (greenOn) { green = "green"; } 
-
+    
     var elem = 
     '<div class="dots-visualization-row '+green+'">'+
-        '<span class="row-label">'+title+'</span>'+
+        '<span class="row-label">'+title+ '<span>('+count+')</span>'+'</span>'+
         '<ul class="row-dots">'+
         createDots(count)+
         '</ul>'+
